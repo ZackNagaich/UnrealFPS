@@ -13,6 +13,6 @@ class TUTORIALFPS_API AFPSGameMode : public AGameMode
 {
 	GENERATED_UCLASS_BODY()
 
-	
+	virtual void StartPlay() override;
 	
 };
