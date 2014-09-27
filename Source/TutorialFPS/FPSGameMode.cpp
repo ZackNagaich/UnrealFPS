@@ -23,3 +23,4 @@ void AFPSGameMode::StartPlay()
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("HELLO WORLD"));
 	}
 }
+
