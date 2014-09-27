@@ -22,6 +22,9 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* InputComponent)
 	// set up gameplay key bindings
 	InputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRight);
+	InputComponent->BindAxis("Turn", this, &AFPSCharacter::AddControllerYawInput);
+	InputComponent->BindAxis("LookUp", this, &AFPSCharacter::AddControllerPitchInput);
+
 }
 void AFPSCharacter::MoveForward(float Value)
 {
