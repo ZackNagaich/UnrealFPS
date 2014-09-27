@@ -23,7 +23,8 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* InputComponent)
 	InputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRight);
 	
-
+	InputComponent->BindAxis("Turn", this, &AFPSCharacter::AddControllerYawInput);
+	InputComponent->BindAxis("LookUp", this, &AFPSCharacter::AddControllerPitchInput);
 
 	// set up jump bindings
 	InputComponent->BindAction("Jump", IE_Pressed, this, &AFPSCharacter::OnStartJump);
