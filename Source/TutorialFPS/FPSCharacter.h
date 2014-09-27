@@ -5,6 +5,10 @@
 #include "GameFramework/Character.h"
 #include "FPSCharacter.generated.h"
 
+/** Pawn mesh: 1st person view (arms; seen only by self) */
+UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+TSubobjectPtr<USkeletalMeshComponent> FirstPersonMesh;
+
 /**
  * 
  */
