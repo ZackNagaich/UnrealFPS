@@ -2,6 +2,7 @@
 
 #include "TutorialFPS.h"
 #include "FPSGameMode.h"
+#include "FPSCharacter.h"
 
 
 AFPSGameMode::AFPSGameMode(const class FPostConstructInitializeProperties& PCIP)
