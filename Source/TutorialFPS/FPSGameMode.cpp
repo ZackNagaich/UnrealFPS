@@ -9,6 +9,7 @@ AFPSGameMode::AFPSGameMode(const class FPostConstructInitializeProperties& PCIP)
 	: Super(PCIP)
 {
 
+	DefaultPawnClass = AFPSCharacter::StaticClass();
 
 }
 
