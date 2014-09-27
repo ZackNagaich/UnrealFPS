@@ -2,7 +2,8 @@
 /DerivedDataCache/*
 /Intermediate/*
 /Saved/*
-*.sdf
-*.sln
-*.suo
-*.opensdf
+TutorialFPS.sdf
+TutorialFPS.sln
+TutorialFPS.suo
+TutorialFPS.opensdf
+TutorialFPS.v12.suo
