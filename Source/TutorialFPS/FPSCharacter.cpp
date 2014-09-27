@@ -22,6 +22,12 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* InputComponent)
 	// set up gameplay key bindings
 	InputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRight);
+	
+
+
+	// set up jump bindings
+	InputComponent->BindAction("Jump", IE_Pressed, this, &AFPSCharacter::OnStartJump);
+	InputComponent->BindAction("Jump", IE_Released, this, &AFPSCharacter::OnStopJump);
 }
 void AFPSCharacter::MoveForward(float Value)
 {
@@ -52,3 +58,10 @@ void AFPSCharacter::MoveRight(float Value)
 	}
 }
 
+void AFPSCharacter::OnStartJump(){
+	bPressedJump = true;
+}
+
+void AFPSCharacter::OnStopJump(){
+	bPressedJump = false;
+}

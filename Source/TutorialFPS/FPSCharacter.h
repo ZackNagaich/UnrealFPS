@@ -21,5 +21,13 @@ class TUTORIALFPS_API AFPSCharacter : public ACharacter
 			//handles strafing
 			UFUNCTION()
 				void MoveRight(float Val);
+
+		//Sets jump flag when key is pressed
+			UFUNCTION()
+				void OnStartJump();
+
+		//Clears jump flag when key is released
+			UFUNCTION()
+				void OnStopJump();
 	
 };
